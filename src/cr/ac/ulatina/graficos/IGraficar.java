@@ -10,6 +10,6 @@ package cr.ac.ulatina.graficos;
  */
 public interface IGraficar {
     
-    void graficar();
+    void dibujar();
     
 }

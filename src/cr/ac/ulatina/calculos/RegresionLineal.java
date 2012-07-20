@@ -8,7 +8,7 @@ package cr.ac.ulatina.calculos;
  *
  * @author alpocr
  */
-public class RegrsionLineal implements ICalcularSerie{
+public class RegresionLineal implements ICalcularSerie{
 
     @Override
     public double calcular() {
