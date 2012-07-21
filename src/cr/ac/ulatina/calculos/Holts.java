@@ -5,7 +5,7 @@
 package cr.ac.ulatina.calculos;
 
 /**
- *
+ * Esta clase aplica Holts para pronosticar una serie.
  * @author alpocr
  */
 public class Holts implements ICalcularSerie{

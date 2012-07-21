@@ -5,7 +5,8 @@
 package cr.ac.ulatina.calculos;
 
 /**
- *
+ * Esta clase implementa los métodos de ICalcularSerie, y los acopla
+ * para pronosticar una serie usando Winters.
  * @author alpocr
  */
 public class Winters implements ICalcularSerie{

@@ -1,17 +1,17 @@
-/*
+ /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.calculos;
+package cr.ac.ulatina.graficos;
 
 /**
- * Esta clase aplica Regresion Lineal para pronosticar una serie.
+ *
  * @author alpocr
  */
-public class RegresionLineal implements ICalcularSerie{
+public class GraficoLineal implements IGraficar{
 
     @Override
-    public double calcular() {
+    public void dibujarGrafica() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
