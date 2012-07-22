@@ -13,6 +13,6 @@ public interface IGraficar {
     /**
      * Imprime el gráfico.
      */
-    void dibujarGrafica();
+    void dibujar();
     
 }

@@ -10,6 +10,13 @@ package cr.ac.ulatina.calculos;
  * @author alpocr
  */
 public class BoxJenkis implements ICalcularSerie{
+    
+    /**
+     * Constructor
+     */
+    public BoxJenkis(){
+        
+    }
 
     @Override
     public double calcular() {

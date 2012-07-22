@@ -11,6 +11,13 @@ package cr.ac.ulatina.calculos;
  */
 public class Winters implements ICalcularSerie{
 
+    /**
+     * Constructor
+     */
+    public Winters(){
+        
+    }
+    
     @Override
     public double calcular() {
         throw new UnsupportedOperationException("Not supported yet.");

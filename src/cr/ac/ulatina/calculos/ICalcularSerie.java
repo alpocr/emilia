@@ -24,4 +24,6 @@ public interface ICalcularSerie {
      * LISTA DE VALORES
      */
     
+    
+    
 }

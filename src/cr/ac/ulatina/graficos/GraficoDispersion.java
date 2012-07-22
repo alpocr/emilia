@@ -10,9 +10,20 @@ package cr.ac.ulatina.graficos;
  */
 public class GraficoDispersion implements IGraficar{
 
+    /**
+     * Constructor
+     */
+    public GraficoDispersion(){
+        
+    }
+
     @Override
-    public void dibujarGrafica() {
+    public void dibujar() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+            
+    
+    
+
     
 }

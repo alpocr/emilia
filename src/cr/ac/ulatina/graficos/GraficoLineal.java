@@ -10,9 +10,19 @@ package cr.ac.ulatina.graficos;
  */
 public class GraficoLineal implements IGraficar{
 
+    /**
+     * Constructor
+     */
+     public GraficoLineal(){
+        
+    }
+     
+
     @Override
-    public void dibujarGrafica() {
+    public void dibujar() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+    
+
     
 }

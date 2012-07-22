@@ -9,6 +9,13 @@ package cr.ac.ulatina.calculos;
  * @author alpocr
  */
 public class Holts implements ICalcularSerie{
+    
+    /**
+     * Constructor
+     */
+    public Holts(){
+        
+    }
 
     @Override
     public double calcular() {

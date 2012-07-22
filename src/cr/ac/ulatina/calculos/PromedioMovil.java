@@ -4,13 +4,26 @@
  */
 package cr.ac.ulatina.calculos;
 
+import java.util.List;
+
 /**
  * Esta clase implementa de ICalcularSerie
  * 
  * @author alpocr
  */
 public class PromedioMovil implements ICalcularSerie{
+    
+    private int unidad;
+    private List<Double> lista;
+    
 
+   /**
+     * Constructor
+     */
+    public PromedioMovil(){
+        
+    }
+    
     /**
      * 
      * @return el valor del promedio movil
@@ -18,6 +31,34 @@ public class PromedioMovil implements ICalcularSerie{
     @Override
     public double calcular() {
         throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    /**
+     * @return the unidad
+     */
+    public int getUnidad() {
+        return unidad;
+    }
+
+    /**
+     * @param unidad the unidad to set
+     */
+    public void setUnidad(int unidad) {
+        this.unidad = unidad;
+    }
+
+    /**
+     * @return the lista
+     */
+    public List<Double> getLista() {
+        return lista;
+    }
+
+    /**
+     * @param lista the lista to set
+     */
+    public void setLista(List<Double> lista) {
+        this.lista = lista;
     }
     
 }

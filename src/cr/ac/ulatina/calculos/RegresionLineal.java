@@ -10,6 +10,13 @@ package cr.ac.ulatina.calculos;
  */
 public class RegresionLineal implements ICalcularSerie{
 
+    /**
+     * Constructor
+     */
+    public RegresionLineal(){
+        
+    }
+    
     @Override
     public double calcular() {
         throw new UnsupportedOperationException("Not supported yet.");
