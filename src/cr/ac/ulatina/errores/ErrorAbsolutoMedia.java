@@ -2,29 +2,30 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.graficos;
+package cr.ac.ulatina.errores;
 
 /**
- * Esta clase contiene todo lo relacionado con los gráficos de dispersión.
- * 
+ *
  * @author alpocr
  */
-public class GraficoDispersion implements IGraficar{
-
+public class ErrorAbsolutoMedia implements ICalcularErrores{
+    
+    
     /**
      * Constructor
      */
-    public GraficoDispersion(){
+    public ErrorAbsolutoMedia(){
         
     }
 
+    
+    /**
+     * 
+     * @return el resultado del error absoluto de la media
+     */
     @Override
-    public void dibujar() {
+    public double calcularError() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-            
-    
-    
-
     
 }

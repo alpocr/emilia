@@ -5,7 +5,7 @@
 package cr.ac.ulatina.graficos;
 
 /**
- *
+ * Esta clase contiene todo lo relacionado con los graficos lineales.
  * @author alpocr
  */
 public class GraficoLineal implements IGraficar{
@@ -16,6 +16,7 @@ public class GraficoLineal implements IGraficar{
      public GraficoLineal(){
         
     }
+     
      
 
     @Override

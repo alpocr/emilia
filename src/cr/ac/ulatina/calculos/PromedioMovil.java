@@ -8,29 +8,33 @@ import java.util.List;
 
 /**
  * Esta clase implementa de ICalcularSerie
- * 
+ *
  * @author alpocr
  */
-public class PromedioMovil implements ICalcularSerie{
-    
+public class PromedioMovil implements ICalcularSerie {
+
     private int unidad;
     private List<Double> lista;
-    
 
-   /**
+    /**
      * Constructor
      */
-    public PromedioMovil(){
-        
+    public PromedioMovil() {
     }
-    
+
     /**
-     * 
+     *
      * @return el valor del promedio movil
      */
     @Override
     public double calcular() {
-        throw new UnsupportedOperationException("Not supported yet.");
+
+        double promedio = 0;
+
+        for (int i = 0; i < getLista().lastIndexOf(i) - getUnidad(); i++) {
+        }
+
+        return promedio;
     }
 
     /**
@@ -60,5 +64,4 @@ public class PromedioMovil implements ICalcularSerie{
     public void setLista(List<Double> lista) {
         this.lista = lista;
     }
-    
 }

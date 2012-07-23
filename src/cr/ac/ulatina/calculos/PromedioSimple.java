@@ -23,9 +23,8 @@ public class PromedioSimple implements ICalcularSerie {
     }
 
     /**
-     * ESTE METODO NO SERA SOPORTA MAS
-     * POR FAVOR USAR CALCULAR().
-     * 
+     * ESTE METODO NO SERA SOPORTA MAS POR FAVOR USAR CALCULAR().
+     *
      * @param lista son los valores que recibe para promediar.
      * @return el promedio simple de todos los valores.
      */
@@ -47,12 +46,12 @@ public class PromedioSimple implements ICalcularSerie {
     @Override
     public double calcular() {
         double promedio = 0;
-        
+
         for (int i = 0; i < getLista().size(); i++) {
             promedio = promedio + getLista().get(i);
-            
+
         }
-        
+
         return promedio / getLista().size();
     }
 

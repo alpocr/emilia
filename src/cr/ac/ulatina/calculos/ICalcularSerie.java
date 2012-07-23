@@ -19,9 +19,11 @@ public interface ICalcularSerie {
      */
     double calcular();
     
+    
+    
     /**
      * AQUI DEBO DE PROGRAMAR UN METODO CALCULAR QUE RECIBA COMO PARAMETRO UNA
-     * LISTA DE VALORES
+     * LISTA DE VALORES. CREO.
      */
     
     

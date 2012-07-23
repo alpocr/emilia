@@ -11,7 +11,7 @@ package cr.ac.ulatina.graficos;
 public interface IGraficar {
     
     /**
-     * Imprime el gráfico.
+     * Dibuja el gráfico.
      */
     void dibujar();
     

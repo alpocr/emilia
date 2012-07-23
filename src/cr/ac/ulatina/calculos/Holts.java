@@ -6,20 +6,19 @@ package cr.ac.ulatina.calculos;
 
 /**
  * Esta clase aplica Holts para pronosticar una serie.
+ *
  * @author alpocr
  */
-public class Holts implements ICalcularSerie{
-    
+public class Holts implements ICalcularSerie {
+
     /**
      * Constructor
      */
-    public Holts(){
-        
+    public Holts() {
     }
 
     @Override
     public double calcular() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-    
 }
