@@ -20,6 +20,8 @@ public class PromedioSimple implements ICalcularSerie {
      * Constructor
      */
     public PromedioSimple() {
+        
+        
     }
 
     /**
@@ -35,7 +37,7 @@ public class PromedioSimple implements ICalcularSerie {
         for (int i = 0; i < getLista().size(); i++) {
             promedio = promedio + getLista().get(i);
         }
-
+        
         return promedio / getLista().size();
     }
 
@@ -51,7 +53,7 @@ public class PromedioSimple implements ICalcularSerie {
             promedio = promedio + getLista().get(i);
 
         }
-
+        
         return promedio / getLista().size();
     }
 
