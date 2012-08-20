@@ -22,7 +22,7 @@ características.
 
 
 Características:
-1- Genera sieres lineales y de series de tiempo.
+1- Genera series lineales y de series de tiempo.
 2- Librería básica con cálculos básicos de pronósticos.
 3- Precisión de los datos.
 4- Importar mediante CSV, XML.
