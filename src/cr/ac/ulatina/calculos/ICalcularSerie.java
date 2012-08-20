@@ -18,8 +18,7 @@ public interface ICalcularSerie {
      * @return
      */
     double calcular();
-    
-    
+     
     
     /**
      * AQUI DEBO DE PROGRAMAR UN METODO CALCULAR QUE RECIBA COMO PARAMETRO UNA

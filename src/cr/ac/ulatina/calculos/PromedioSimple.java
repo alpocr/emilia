@@ -20,25 +20,11 @@ public class PromedioSimple implements ICalcularSerie {
      * Constructor
      */
     public PromedioSimple() {
-        
-        
     }
 
-    /**
-     * ESTE METODO NO SERA SOPORTA MAS POR FAVOR USAR CALCULAR().
-     *
-     * @param lista son los valores que recibe para promediar.
-     * @return el promedio simple de todos los valores.
-     */
-    private double calcularPromedioSimple() {
-
-        double promedio = 0;
-
-        for (int i = 0; i < getLista().size(); i++) {
-            promedio = promedio + getLista().get(i);
-        }
-        
-        return promedio / getLista().size();
+    public PromedioSimple(List<Double> lista) {
+        this.lista = lista;
+        calcular();
     }
 
     /**
@@ -53,7 +39,7 @@ public class PromedioSimple implements ICalcularSerie {
             promedio = promedio + getLista().get(i);
 
         }
-        
+
         return promedio / getLista().size();
     }
 

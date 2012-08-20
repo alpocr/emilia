@@ -22,6 +22,14 @@ public class PromedioMovil implements ICalcularSerie {
     public PromedioMovil() {
     }
 
+    public PromedioMovil(int unidad, List<Double> lista) {
+        this.unidad = unidad;
+        this.lista = lista;
+        calcular();
+    }
+    
+    
+
     /**
      *
      * @return el valor del promedio movil
