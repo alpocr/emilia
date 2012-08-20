@@ -4,43 +4,65 @@
  */
 package cr.ac.ulatina.calculos;
 
-import java.util.List;
+import org.apache.commons.math3.stat.regression.SimpleRegression;
 
 /**
  * Esta clase aplica Regresion Lineal para pronosticar una serie.
+ *
  * @author alpocr
  */
-public class RegresionLineal implements ICalcularSerie{
-    
-    private List<Double> x;
-    private List<Double> y;
-    private int n;
-    
+public class RegresionLineal extends SimpleRegression implements ICalcularSerie {
+
+    private double x;
+    private double y;
 
     /**
      * Constructor
      */
-    public RegresionLineal(){
-        
+    public RegresionLineal() {
     }
-    
+
+    public RegresionLineal(double x, double y) {
+        this.x = x;
+        this.y = y;
+        calcular();
+    }
+
     @Override
     public double calcular() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-    
-    public double calcularPendiente(){
+        SimpleRegression regresion = new SimpleRegression();
         
+        regresion.addData(getX(), getY());
         
-        return 0;
-    }
-    
-    public double calcularIntercepcion(){
-        
-        
-        return 0;
+        return regresion.getIntercept() +  regresion.getSlope() * getN();
     }
 
 
-    
+    /**
+     * @return the x
+     */
+    public double getX() {
+        return x;
+    }
+
+    /**
+     * @param x the x to set
+     */
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    /**
+     * @return the y
+     */
+    public double getY() {
+        return y;
+    }
+
+    /**
+     * @param y the y to set
+     */
+    public void setY(double y) {
+        this.y = y;
+    }
 }
