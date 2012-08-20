@@ -27,8 +27,6 @@ public class PromedioMovil implements ICalcularSerie {
         this.lista = lista;
         calcular();
     }
-    
-    
 
     /**
      *
@@ -36,10 +34,10 @@ public class PromedioMovil implements ICalcularSerie {
      */
     @Override
     public double calcular() {
-
         double promedio = 0;
 
-        for (int i = 0; i < getLista().lastIndexOf(i) - getUnidad(); i++) {
+        for (int i = 0; i <= getUnidad(); i++) {
+            promedio += getLista().get(i);
         }
 
         return promedio;

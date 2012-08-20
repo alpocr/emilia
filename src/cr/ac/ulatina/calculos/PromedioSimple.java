@@ -35,8 +35,8 @@ public class PromedioSimple implements ICalcularSerie {
     public double calcular() {
         double promedio = 0;
 
-        for (int i = 0; i < getLista().size(); i++) {
-            promedio = promedio + getLista().get(i);
+        for (int i = 0; i <= getLista().size(); i++) {
+            promedio += getLista().get(i);
 
         }
 
