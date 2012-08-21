@@ -4,27 +4,29 @@
  */
 package cr.ac.ulatina.graficos;
 
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.xy.XYDataset;
+
 /**
  * Esta clase contiene todo lo relacionado con los gráficos de dispersión.
- * 
+ *
  * @author alpocr
  */
-public class GraficoDispersion implements IGraficar{
+public class GraficoDispersion implements IGraficar {
 
     /**
      * Constructor
      */
-    public GraficoDispersion(){
-        
+    public GraficoDispersion() {
     }
 
     @Override
-    public void dibujar() {
+    public XYDataset crearDataset() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-            
-    
-    
 
-    
+    @Override
+    public JFreeChart crearGrafico(XYDataset dataset) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
