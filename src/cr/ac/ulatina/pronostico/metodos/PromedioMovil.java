@@ -2,45 +2,59 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.calculos;
+package cr.ac.ulatina.pronostico.metodos;
 
 import java.util.List;
 
 /**
- * Esta clase implementa de ISerieTiempo, y acopla los métodos para calcular
- * el Promedio Simple de una serie de valores.
+ * Esta clase implementa de ISerieTiempo
  *
  * @author alpocr
  */
-public class PromedioSimple implements ISerieTiempo {
+public class PromedioMovil implements ISerieTiempo {
 
+    private int unidad;
     private List<Double> lista;
 
     /**
      * Constructor
      */
-    public PromedioSimple() {
+    public PromedioMovil() {
     }
 
-    public PromedioSimple(List<Double> lista) {
+    public PromedioMovil(int unidad, List<Double> lista) {
+        this.unidad = unidad;
         this.lista = lista;
         calcular();
     }
 
     /**
      *
-     * @return el promedio simple (a+b+c)/n
+     * @return el valor del promedio movil
      */
     @Override
     public double calcular() {
         double promedio = 0;
 
-        for (int i = 0; i <= getLista().size(); i++) {
+        for (int i = 0; i <= getUnidad(); i++) {
             promedio += getLista().get(i);
-
         }
 
-        return promedio / getLista().size();
+        return promedio;
+    }
+
+    /**
+     * @return the unidad
+     */
+    public int getUnidad() {
+        return unidad;
+    }
+
+    /**
+     * @param unidad the unidad to set
+     */
+    public void setUnidad(int unidad) {
+        this.unidad = unidad;
     }
 
     /**

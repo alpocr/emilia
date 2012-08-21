@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.calculos;
+package cr.ac.ulatina.pronostico.metodos;
 
 /**
  * Esta clase implementa los métodos de ISerieTiempo, y los acopla

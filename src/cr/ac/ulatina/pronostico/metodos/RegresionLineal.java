@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.calculos;
+package cr.ac.ulatina.pronostico.metodos;
 
 import org.apache.commons.math3.stat.regression.SimpleRegression;
 
@@ -11,7 +11,7 @@ import org.apache.commons.math3.stat.regression.SimpleRegression;
  *
  * @author alpocr
  */
-public class RegresionLineal extends SimpleRegression implements ISerieTiempo {
+public class RegresionLineal extends SimpleRegression implements ISerieCausal {
 
     private double x;
     private double y;

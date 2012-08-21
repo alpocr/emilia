@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.calculos;
+package cr.ac.ulatina.pronostico.metodos;
 
 /**
  * En ésta interfaz se definen los métodos que se deban programar para
@@ -18,6 +18,8 @@ public interface ISerieTiempo {
      * @return
      */
     double calcular();
+    
+    
      
     
     /**
