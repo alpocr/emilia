@@ -2,29 +2,24 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.pronostico.errores;
+package cr.ac.ulatina.pronosticos.metodos;
 
 /**
- *
+ * Esta clase implementa los cálculos necesarios para pronosticar valores
+ * implementando el método Box-Jenkis.
  * @author alpocr
  */
-public class ErrorAbsolutoMedia implements ICalcularErrores{
-    
+public class BoxJenkis implements ISerieCausal{
     
     /**
      * Constructor
      */
-    public ErrorAbsolutoMedia(){
+    public BoxJenkis(){
         
     }
 
-    
-    /**
-     * 
-     * @return el resultado del error absoluto de la media
-     */
     @Override
-    public double calcularError() {
+    public double calcular() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     

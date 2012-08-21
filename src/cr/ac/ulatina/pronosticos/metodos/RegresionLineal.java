@@ -2,12 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.pronostico.metodos;
+package cr.ac.ulatina.pronosticos.metodos;
 
 import org.apache.commons.math3.stat.regression.SimpleRegression;
 
 /**
- * Esta clase aplica Regresion Lineal para pronosticar una serie.
+ * Esta clase aplica Regresion Lineal para pronosticar una serie. Se debe de
+ * proporcionar 4 o más valores.
  *
  * @author alpocr
  */
@@ -31,12 +32,11 @@ public class RegresionLineal extends SimpleRegression implements ISerieCausal {
     @Override
     public double calcular() {
         SimpleRegression regresion = new SimpleRegression();
-        
-        regresion.addData(getX(), getY());
-        
-        return regresion.getIntercept() +  (regresion.getSlope() * getN());
-    }
 
+        regresion.addData(getX(), getY());
+
+        return regresion.getIntercept() + (regresion.getSlope() * getN());
+    }
 
     /**
      * @return the x

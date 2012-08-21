@@ -2,27 +2,26 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.pronostico.errores;
+package cr.ac.ulatina.pronosticos.errores;
 
 /**
  *
  * @author alpocr
  */
-public class ErrorCuadraticoMedia implements ICalcularErrores{
+public class ErrorAbsolutoPorcentualMedia implements ICalcularErrores{
     
     
     /**
      * Constructor
      */
-    public ErrorCuadraticoMedia(){
+    public ErrorAbsolutoPorcentualMedia(){
         
         
     }
 
-    
     /**
      * 
-     * @return el resultado del error cuadratico de la media
+     * @return el resultado del error absoluto porcentual de la media
      */
     @Override
     public double calcularError() {

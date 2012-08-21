@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cr.ac.ulatina.pronostico.errores;
+package cr.ac.ulatina.pronosticos.errores;
 
 /**
  * En ésta interfaz se definen los métodos necesarios para calcular
