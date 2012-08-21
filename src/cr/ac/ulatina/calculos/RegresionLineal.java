@@ -34,7 +34,7 @@ public class RegresionLineal extends SimpleRegression implements ICalcularSerie 
         
         regresion.addData(getX(), getY());
         
-        return regresion.getIntercept() +  regresion.getSlope() * getN();
+        return regresion.getIntercept() +  (regresion.getSlope() * getN());
     }
 
 

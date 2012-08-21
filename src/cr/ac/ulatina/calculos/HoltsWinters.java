@@ -5,16 +5,16 @@
 package cr.ac.ulatina.calculos;
 
 /**
- * Esta clase aplica Holts para pronosticar una serie.
+ * Esta clase aplica HoltsWinters para pronosticar una serie.
  *
  * @author alpocr
  */
-public class Holts implements ICalcularSerie {
+public class HoltsWinters implements ICalcularSerie {
 
     /**
      * Constructor
      */
-    public Holts() {
+    public HoltsWinters() {
     }
 
     @Override
