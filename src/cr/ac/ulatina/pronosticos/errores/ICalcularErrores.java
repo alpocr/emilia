@@ -19,4 +19,6 @@ public interface ICalcularErrores {
      */
     double calcularError();
     
+    // double getValorAbsoluto();
+    
 }
