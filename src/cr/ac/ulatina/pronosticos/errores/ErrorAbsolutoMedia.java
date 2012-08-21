@@ -29,8 +29,6 @@ public class ErrorAbsolutoMedia implements ICalcularErrores {
         calcularError();
     }
 
-
-
     /**
      *
      * @return el resultado del error absoluto de la media

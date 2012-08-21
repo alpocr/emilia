@@ -10,10 +10,21 @@ package cr.ac.ulatina.pronosticos.errores;
  */
 public class RaizErrorCuadraticoMedia implements ICalcularErrores {
 
+    private double x;
+    private double p;
+    private double n;
+
     /**
      * Constructor
      */
     public RaizErrorCuadraticoMedia() {
+    }
+
+    public RaizErrorCuadraticoMedia(double x, double p, double n) {
+        this.x = x;
+        this.p = p;
+        this.n = n;
+        calcularError();
     }
 
     /**
@@ -22,6 +33,54 @@ public class RaizErrorCuadraticoMedia implements ICalcularErrores {
      */
     @Override
     public double calcularError() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        double error = 0;
+
+        for (int i = 1; i <= getN(); i++) {
+            error += Math.pow((getX() - getP()) / getX(), 2);
+        }
+
+        return Math.sqrt(error);
+    }
+
+    /**
+     * @return the x
+     */
+    public double getX() {
+        return x;
+    }
+
+    /**
+     * @param x the x to set
+     */
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    /**
+     * @return the p
+     */
+    public double getP() {
+        return p;
+    }
+
+    /**
+     * @param p the p to set
+     */
+    public void setP(double p) {
+        this.p = p;
+    }
+
+    /**
+     * @return the n
+     */
+    public double getN() {
+        return n;
+    }
+
+    /**
+     * @param n the n to set
+     */
+    public void setN(double n) {
+        this.n = n;
     }
 }
