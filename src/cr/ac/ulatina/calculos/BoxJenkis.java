@@ -9,7 +9,7 @@ package cr.ac.ulatina.calculos;
  * implementando el método Box-Jenkis.
  * @author alpocr
  */
-public class BoxJenkis implements ICalcularSerie{
+public class BoxJenkis implements ISerieTiempo{
     
     /**
      * Constructor

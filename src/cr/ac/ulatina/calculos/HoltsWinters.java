@@ -9,7 +9,7 @@ package cr.ac.ulatina.calculos;
  *
  * @author alpocr
  */
-public class HoltsWinters implements ICalcularSerie {
+public class HoltsWinters implements ISerieTiempo {
 
     /**
      * Constructor

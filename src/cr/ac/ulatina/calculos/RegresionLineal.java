@@ -11,7 +11,7 @@ import org.apache.commons.math3.stat.regression.SimpleRegression;
  *
  * @author alpocr
  */
-public class RegresionLineal extends SimpleRegression implements ICalcularSerie {
+public class RegresionLineal extends SimpleRegression implements ISerieTiempo {
 
     private double x;
     private double y;

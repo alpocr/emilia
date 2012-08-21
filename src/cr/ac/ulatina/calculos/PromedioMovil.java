@@ -7,11 +7,11 @@ package cr.ac.ulatina.calculos;
 import java.util.List;
 
 /**
- * Esta clase implementa de ICalcularSerie
+ * Esta clase implementa de ISerieTiempo
  *
  * @author alpocr
  */
-public class PromedioMovil implements ICalcularSerie {
+public class PromedioMovil implements ISerieTiempo {
 
     private int unidad;
     private List<Double> lista;

@@ -7,12 +7,12 @@ package cr.ac.ulatina.calculos;
 import java.util.List;
 
 /**
- * Esta clase implementa de ICalcularSerie, y acopla los métodos para calcular
+ * Esta clase implementa de ISerieTiempo, y acopla los métodos para calcular
  * el Promedio Simple de una serie de valores.
  *
  * @author alpocr
  */
-public class PromedioSimple implements ICalcularSerie {
+public class PromedioSimple implements ISerieTiempo {
 
     private List<Double> lista;
 

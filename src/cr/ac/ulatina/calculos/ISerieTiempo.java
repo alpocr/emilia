@@ -10,7 +10,7 @@ package cr.ac.ulatina.calculos;
  *
  * @author alpocr
  */
-public interface ICalcularSerie {
+public interface ISerieTiempo {
 
     /**
      * Método que se invoca para calcular la serie.
